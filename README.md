@@ -81,7 +81,7 @@ If yes, repeat the process.
 ---
 
 ## Example Program Flow
-Welcome to the Hacker Password Strength Checker!
+Welcome to the Password Strength Checker!
 
 - Enter your password: hello
 
