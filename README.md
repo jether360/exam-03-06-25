@@ -116,7 +116,7 @@ Level: Intermediate Developer 🚀
 Favorite Language: Python
 
 GitHub Profile:
-https://github.com/mariadev
+https://github.com/jether360
 
 Username Length: 8 characters
 
