@@ -1,4 +1,4 @@
-# Hacker Twist Password Strength Checker
+# Password Strength Checker
 
 ## Overview
 This is a **beginner programming exam project**.  
@@ -67,7 +67,10 @@ If missing any of the above:
 | Strong | 🟢 |
 
 Example:
-
+Password Length: 5 characters
+Password Strength: Weak 🔴
+Hint: Add at least 1 number 🔢
+Hint: Add at least 1 uppercase letter 🅰️
 
 ---
 
@@ -78,7 +81,34 @@ If yes, repeat the process.
 ---
 
 ## Example Program Flow
+Welcome to the Hacker Password Strength Checker!
 
+Enter your password: hello
+
+Password Length: 5 characters
+Password Strength: Weak 🔴
+Hint: Add at least 1 uppercase letter 🅰️
+Hint: Add at least 1 number 🔢
+Hint: Add at least 1 special character ❗
+
+Do you want to check another password? yes
+
+Enter your password: Hello123
+
+Password Length: 8 characters
+Password Strength: Medium 🟠
+Hint: Add at least 1 special character ❗
+
+Do you want to check another password? yes
+
+Enter your password: Hello123!
+
+Password Length: 9 characters
+Password Strength: Strong 🟢
+
+Do you want to check another password? no
+
+Thank you for using the Password Strength Checker!
 
 ---
 
