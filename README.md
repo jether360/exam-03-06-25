@@ -67,10 +67,10 @@ If missing any of the above:
 | Strong | 🟢 |
 
 Example:
-Password Length: 5 characters
-Password Strength: Weak 🔴
-Hint: Add at least 1 number 🔢
-Hint: Add at least 1 uppercase letter 🅰️
+- Password Length: 5 characters
+- Password Strength: Weak 🔴
+- Hint: Add at least 1 number 🔢
+- Hint: Add at least 1 uppercase letter 🅰️
 
 ---
 
