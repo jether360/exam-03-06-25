@@ -47,10 +47,10 @@ Your program must ask the user to input the following:
 
 Example input:
 
-Enter your name: Maria
-Enter your GitHub username: mariadev
-Enter your favorite programming language: Python
-Enter your years of experience: 4
+* Enter your name: Maria
+* Enter your GitHub username: mariadev
+* Enter your favorite programming language: Python
+* Enter your years of experience: 4
 
 ---
 
