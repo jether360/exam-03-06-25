@@ -1,242 +1,124 @@
-# Developer QR Resume Generator
+# Hacker Twist Password Strength Checker
 
-## Project Overview
+## Overview
+This is a **beginner programming exam project**.  
+Students will create a **Password Strength Checker** with a twist:  
 
-The **Developer QR Resume Generator** is a beginner programming challenge where students create a program that generates a **QR Code containing a short developer resume**.
+- Evaluates password strength  
+- Gives hints to improve the password  
+- Categorizes strength with **emojis**  
+- Allows checking multiple passwords  
 
-When the QR code is scanned, it should display information about the developer, including their **name, experience level, skills, and GitHub profile**.
-
-This project helps beginners practice:
-
-* User input
-* Conditional logic
-* Input validation
-* String formatting
-* QR code generation
-* File creation
-* Looping for multiple outputs
-
-Students may use **any programming language**.
+Students may use **any programming language** (Python, JavaScript, Java, C#, PHP, etc.).
 
 ---
 
-# Project Objective
+## Objectives
+The program helps students practice:
 
-Create a program that:
-
-1. Collects developer information
-2. Determines their **developer level using logic**
-3. Validates user input
-4. Generates a **Developer Resume Message**
-5. Converts that message into a **QR Code**
-6. Saves the QR code as an **image file**
-7. Allows generating **multiple QR codes**
+- User input  
+- Conditional logic  
+- String analysis  
+- Output formatting  
+- Loops for multiple attempts  
 
 ---
 
-# Program Requirements
+## Instructions
 
-## 1. Collect User Information
+### Step 1: Ask the User for a Password
+Prompt the user:
 
-Your program must ask the user to input the following:
-
-* Name
-* GitHub Username
-* Favorite Programming Language
-* Years of Programming Experience
-
-Example input:
-
-* Enter your name: Maria
-* Enter your GitHub username: mariadev
-* Enter your favorite programming language: Python
-* Enter your years of experience: 4
 
 ---
 
-# 2. Input Validation
+### Step 2: Check Password Length
+Determine the password length:
 
-Your program must validate the **GitHub username**.
+- Less than 6 → Weak  
+- 6 – 10 → Medium  
+- More than 10 → Strong  
 
-If the username is empty, display an error message and ask the user to enter it again.
+---
+
+### Step 3: Check Password Complexity
+Check if the password contains:
+
+- At least 1 **uppercase letter**  
+- At least 1 **number**  
+- At least 1 **special character** (`!@#$%^&*`)  
+
+---
+
+### Step 4: Give Hints for Improvement
+If missing any of the above:
+
+- No uppercase → “Add at least 1 uppercase letter 🅰️”  
+- No number → “Add at least 1 number 🔢”  
+- No special character → “Add at least 1 special character ❗”  
+
+---
+
+### Step 5: Display Password Strength with Emojis
+| Strength | Emoji |
+|----------|-------|
+| Weak | 🔴 |
+| Medium | 🟠 |
+| Strong | 🟢 |
 
 Example:
 
-Username cannot be empty. Please enter a valid GitHub username.
 
 ---
 
-# 3. Count Username Length
-
-After receiving the username, your program must **count the number of characters** in the username and display it.
-
-Example:
-
-GitHub Username: mariadev
-Username Length: 8 characters
+### Step 6: Allow Multiple Attempts
+After checking a password, ask the user:
+If yes, repeat the process.
 
 ---
 
-# 4. Developer Level Logic
+## Example Program Flow
 
-Determine the developer level based on years of experience.
-
-| Years of Experience | Developer Level        |
-| ------------------- | ---------------------- |
-| 0 – 1               | Beginner Developer     |
-| 2 – 4               | Intermediate Developer |
-| 5+                  | Expert Developer       |
 
 ---
 
-# 5. Add Emoji Based on Developer Level
-
-Your program must add an emoji depending on the developer level.
-
-| Level        | Emoji |
-| ------------ | ----- |
-| Beginner     | 🌱    |
-| Intermediate | 🚀    |
-| Expert       | 🧠    |
-
-Example:
-
-Developer Level: Intermediate Developer 🚀
-
----
-
-# 6. Generate Developer Resume Message
-
-Your program must generate a message like this:
-
-Developer Profile
-
-Name: Maria
-Level: Intermediate Developer 🚀
-Favorite Language: Python
-
-GitHub Profile:
-https://github.com/jether360
-
-Username Length: 8 characters
-
-Scan this QR code to view my developer profile.
-
----
-
-# 7. Generate QR Code
-
-Convert the **developer resume message** into a QR Code.
-
-When scanned, the QR code should display the developer profile message.
-
----
-
-# 8. Save the QR Code
-
-Save the QR code as an image file.
-
-File format:
-
-developer_qr_[name].png
-
-Example:
-
-developer_qr_maria.png
-
----
-
-# 9. Generate Multiple QR Codes
-
-Your program must allow users to generate **multiple developer QR resumes**.
-
-After generating one QR code, ask the user:
-
-Do you want to generate another QR code? (yes/no)
-
-Example flow:
-
-Welcome to the Developer QR Resume Generator!
-
-QR code created successfully.
-Saved as: developer_qr_maria.png
-
-Generate another QR code? yes
-
----
-
-# Example Program Output
-
-Welcome to the Developer QR Resume Generator!
-
-Enter your name: Maria
-Enter your GitHub username: mariadev
-Enter your favorite programming language: Python
-Enter years of experience: 4
-
-Username Length: 8 characters
-
-Developer Level: Intermediate Developer 🚀
-
-Generating QR Code...
-
-Success!
-Your Developer QR Resume has been created.
-
-Saved as: developer_qr_maria.png
-
----
-
-# Example Scan Result
-
-Developer Profile
-
-Name: Maria
-Level: Intermediate Developer 🚀
-Favorite Language: Python
-
-GitHub Profile:
-https://github.com/mariadev
-
-Username Length: 8 characters
-
----
-
-# Submission Requirements
-
+## Submission Requirements
 Students must submit:
 
-1. Source Code
-2. Generated QR Code Image
-3. Screenshot showing the scanned QR result
-4. Programming language used
+1. Source Code  
+2. Screenshot showing the program running  
+3. Programming language used  
 
 ---
 
-# Grading Criteria
+## Grading Criteria
 
-| Criteria                          | Points |
-| --------------------------------- | ------ |
-| Program runs successfully         | 20     |
-| Correct developer level logic     | 20     |
-| Input validation (username check) | 15     |
-| Username length calculation       | 10     |
-| QR Code generation                | 20     |
-| Multiple QR generation logic      | 10     |
-| Code readability                  | 5      |
+| Criteria | Points |
+|----------|--------|
+| Program runs correctly | 25 |
+| Password length logic | 20 |
+| Complexity checks | 20 |
+| Hints displayed correctly | 20 |
+| Code readability | 15 |
 
-Total: **100 Points**
+**Total: 100 Points**
 
 ---
 
-# Learning Outcome
+## Bonus Challenge (+10 Points)
+Optional features:
 
-After completing this project, students will understand:
+- Customizable password rules (min length, required numbers, special characters)  
+- Display a **strength score from 0–100**  
+- Show a fun security message if the password is very strong (e.g., “You are hacker-proof! 🛡️”)  
 
-* Input validation
-* Conditional logic
-* String manipulation
-* Looping
-* File generation
-* QR code creation
-* Building a small real-world program
+---
+
+## Learning Outcomes
+By completing this project, students will learn:
+
+- Input validation  
+- Conditional statements  
+- String analysis  
+- Looping logic  
+- User-friendly output formatting  
